@@ -1,0 +1,28 @@
+.fa-html5, .fa-css3, .fa-bootstrap, .fa-js, .fa-github, .fa-linkedin, .fa-envelope-open-text, .fa-mobile-alt {
+    font-size: 4em;
+    color: #00e699;
+}
+
+.fa-file-code {
+    font-size: 3.7em;
+    color: #00e699;
+}
+.fa-html5:hover, .fa-css3:hover, .fa-bootstrap:hover, .fa-js:hover, .fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-file-code:hover, .fa-mobile-alt:hover {
+    color: #00b377;
+}
+
+.lang-box, .email-box {
+    background-color: #181818;
+    border: 1px solid #00b377;
+    border-radius: 5px;
+}
+
+.proj-box {
+    background-color: #181818;
+    border: 1px solid #00b377;
+    border-radius: 5px;
+}
+
+body {
+    background-color:#181818;;
+}
