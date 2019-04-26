@@ -26,7 +26,7 @@ let newDivThree = document.createElement('div');
 newDivThree.classList.add('project-gif')
 let newImgThree = document.createElement('img');
 newImgThree.id = 'giftastic'
-newImgThree.src = "assets/images/giftastic.png"
+newImgThree.src = "assets/images/gotgiftastic.png"
 newImgThree.alt = 'Game of Thrones GifTastic'
 newDivThree.appendChild(newImgThree)
 let gifProj = document.getElementById('gif-proj')
