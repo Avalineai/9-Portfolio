@@ -3,6 +3,10 @@ h2 {
     padding: 5%;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .fa-html5, .fa-css3 {
     font-size: 3em;
     color:#e65c00;
@@ -34,9 +38,14 @@ h2 {
 }
 
 .fa-file-code {
-    font-size: 3.7em;
+    font-size: 1em;
     color: #00b386;
     margin: 10px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 10%;
 }
 .fa-html5:hover, .fa-css3:hover, .fa-bootstrap:hover, .fa-js:hover, .fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-file-code:hover, .fa-mobile-alt:hover, .fa-file-pdf:hover {
     color: #004d39;
@@ -49,12 +58,21 @@ h2 {
     text-align: center;
 }
 
+.col-sm-12, .col-lg-6 {
+    padding: 0;
+}
+
 .proj-box {
     background-color: #181818;
     border: 1px solid #00b386;
     border-radius: 5px;
     text-align: center;
-    margin: 10px;
+    margin: 15px;
+    padding: 0px;
+}
+
+.title-text {
+    text-align: center;
 }
 
 body {
@@ -64,11 +82,15 @@ body {
 .project-one, .project-gif, .project-guess, .project-trivia {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 
 }
 
 img {
     width: 100%;
     border-radius: 5px;
+}
+
+img:hover {
+    opacity: 0.5;
 }
