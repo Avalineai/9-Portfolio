@@ -10,35 +10,34 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <header>Header</header>
-
-    <p>Avaline Ai</p>
 
     <p>update LinkedIn with projects I've completed</p>
     <p>update Readme for each project, with description of problem, how you solved it, and some info about technical approach</p>
     <p>refactor some code</p>
-    <p>add a meaningful screenshot of each project</p>
 
     <div class="wrapper">
         <div class="page-header">
             <div class="container">
 
-
+                <div class="row m-3">
+                    <div class="col-sm">
+                        <header class="d-flex justify-content-center"><p>Avaline Ai</p></header>
+                    </div>
+                </div>
                 <div class="row m-3">
                     <div class="col-6">
                         <!--these may be better as bootstrap cards...-->
-                        <div class="proj-box">
-                        <h4>Title1</h4>
-                            <p>https://thejihongjin.github.io/8-Project-1/</p>
+                        <div class="proj-box" id="project-one">
+                        <h4>The Rabbit Hole</h4>
+                            <a id="one-proj" href="https://github.com/Avalineai/8-Project-1"></a>
                             <a href="https://github.com/thejihongjin/8-Project-1" target="_blank"><i class="fas fa-file-code"></i></a>
                         </div>
                     </div>
                     <div class="col-6">
                         <!--these may be better as bootstrap cards...-->
                         <div class="proj-box">
-                            <h4>Title2</h4>
-                            <p>https://avalineai.github.io/WordGuessGame/</p>
+                            <h4>Word Guess Game</h4>
+                            <a id="guess-proj" href="https://avalineai.github.io/WordGuessGame/"></a>
                             <a href="https://github.com/Avalineai/WordGuessGame" target="_blank"><i class="fas fa-file-code"></i></a>
                             </div>
                     </div>
@@ -48,8 +47,8 @@
                         <div class="col-6">
                             <!--these may be better as bootstrap cards...-->
                             <div class="proj-box">
-                                <h4>Title3</h4>
-                                <p>https://avalineai.github.io/GifTastic/</p>
+                                <h4>Game of Thrones GifTastic</h4>
+                                <a id="gif-proj" href="https://avalineai.github.io/GifTastic/" target="_blank"></a>
                                 <a href="https://github.com/Avalineai/GifTastic" target="_blank"><i class="fas fa-file-code"></i></a>
                                 </div>
                             
@@ -57,8 +56,8 @@
                         <div class="col-6">
                             <!--these may be better as bootstrap cards...-->
                             <div class="proj-box">
-                                <h4>Title4</h4>
-                                <p>https://avalineai.github.io/TriviaGame/</p>
+                                <h4>Fruits and Vegetables Trivia</h4>
+                                <a id="trivia-proj" href="https://avalineai.github.io/TriviaGame/"></a>
                                 <a href="https://github.com/Avalineai/TriviaGame" target="_blank"><i class="fas fa-file-code"></i></a>
                                 
                                 </div>
@@ -82,12 +81,13 @@
                             <div class="email-box">
                                 <a href="mailto:avaline.ai@gmail.com"><i class="fas fa-envelope-open-text"></i></a>
 
-                                <a href="tel:+1-858-735-3908"><i class="fas fa-mobile-alt"></i><span>(858) 735-3908</span></a>
+                                <a href="tel:+1-858-735-3908"><i class="fas fa-mobile-alt"></i></a>
 
                                 <a href="https://github.com/Avalineai" target="_blank"><i class="fab fa-github"></i></a>
 
-                                <a href="https://www.linkedin.com/in/avaline-ai-b94b89178/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/avaline-ai-b94b89178" target="_blank"><i class="fab fa-linkedin"></i></a>
 
+                                <a href="assets/files/AA-WD04232019.pdf" title="My Resume"><i class="fas fa-file-pdf"></i>Resume</a>
                                 
 
                             </div>
@@ -97,9 +97,7 @@
         </div>
     </div>
 
-    <a href="resume.pdf" title="Download My Resume"><img style="width: XXpx; height: YYpx; border: 0;"  src="pdf_image.png" alt="My Resume" />Resume</a><p>Need to put actual resume here</p>
-
-    <footer class="test">Footer</footer>
+    
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
