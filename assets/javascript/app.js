@@ -1,40 +1,40 @@
 
 //adding image to div to a project box
-var newDivOne = document.createElement('div');
+let newDivOne = document.createElement('div');
 newDivOne.classList.add('project-one')
-var newImgOne = document.createElement('img');
+let newImgOne = document.createElement('img');
 newImgOne.id = 'projctOne'
 newImgOne.src = "assets/images/project-one.png"
 newDivOne.appendChild(newImgOne)
-var gifProj = document.getElementById('one-proj')
-gifProj.appendChild(newDivOne)
+let projOne = document.getElementById('one-proj')
+projOne.appendChild(newDivOne)
 
 //adding image to div to a project box
-var newDivTwo = document.createElement('div');
+let newDivTwo = document.createElement('div');
 newDivTwo.classList.add('project-guess')
-var newImgTwo = document.createElement('img');
+let newImgTwo = document.createElement('img');
 newImgTwo.id = 'wordGuess'
 newImgTwo.src = "assets/images/guardians.png"
 newDivTwo.appendChild(newImgTwo)
-var gifProj = document.getElementById('guess-proj')
-gifProj.appendChild(newDivTwo)
+let guessProj = document.getElementById('guess-proj')
+guessProj.appendChild(newDivTwo)
 
 //adding image to div to a project box
-var newDivThree = document.createElement('div');
+let newDivThree = document.createElement('div');
 newDivThree.classList.add('project-gif')
-var newImgThree = document.createElement('img');
+let newImgThree = document.createElement('img');
 newImgThree.id = 'giftastic'
 newImgThree.src = "assets/images/giftastic.png"
 newDivThree.appendChild(newImgThree)
-var gifProj = document.getElementById('gif-proj')
+let gifProj = document.getElementById('gif-proj')
 gifProj.appendChild(newDivThree)
 
 //adding image to div to a project box
-var newDivFour = document.createElement('div');
+let newDivFour = document.createElement('div');
 newDivFour.classList.add('project-trivia')
-var newImgFour = document.createElement('img');
+let newImgFour = document.createElement('img');
 newImgFour.id = 'giftastic'
 newImgFour.src = "assets/images/triviajpeg.jpg"
 newDivFour.appendChild(newImgFour)
-var gifProj = document.getElementById('trivia-proj')
-gifProj.appendChild(newDivFour)
+let triviaProj = document.getElementById('trivia-proj')
+triviaProj.appendChild(newDivFour)

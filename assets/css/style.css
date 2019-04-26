@@ -47,12 +47,12 @@ a:hover{
     display: inline-block;
     margin-left: 10%;
 }
-.fa-html5:hover, .fa-css3:hover, .fa-bootstrap:hover, .fa-js:hover, .fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-file-code:hover, .fa-mobile-alt:hover, .fa-file-pdf:hover {
+
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope-open-text:hover, .fa-file-code:hover, .fa-mobile-alt:hover, .fa-file-pdf:hover {
     color: #004d39;
 }
 
 .email-box {
-    background-color: #181818;
     border: 1px solid #00b386;
     border-radius: 5px;
     text-align: center;
@@ -63,11 +63,10 @@ a:hover{
 }
 
 .proj-box {
-    background-color: #181818;
     border: 1px solid #00b386;
     border-radius: 5px;
     text-align: center;
-    margin: 15px;
+    margin: 20px;
     padding: 0px;
 }
 
@@ -89,8 +88,10 @@ body {
 img {
     width: 100%;
     border-radius: 5px;
+    opacity: 0.65;
 }
 
 img:hover {
-    opacity: 0.5;
+    opacity: 1;
+    transform: scale(1.2);
 }
