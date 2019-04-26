@@ -58,6 +58,12 @@ a:hover{
     text-align: center;
 }
 
+.email-box:hover {
+    border: 1px solid #004d39;
+    transition: 0.8s ease-in-out;
+
+}
+
 .col-sm-12, .col-lg-6 {
     padding: 0;
 }
@@ -68,6 +74,26 @@ a:hover{
     text-align: center;
     margin: 20px;
     padding: 0px;
+}
+
+#box-one:hover {
+    border: 1px solid blue;
+    transition: 0.8s ease-in-out;
+}
+
+#box-word:hover {
+    border: 1px solid #000033;
+    transition: 0.8s ease-in-out;
+}
+
+#box-gif:hover {
+    border: 1px solid #99bbff;
+    transition: 0.8s ease-in-out;
+}
+
+#box-trivia:hover {
+    border: 1px solid #ff8533;
+    transition: 0.8s ease-in-out;
 }
 
 .title-text {
@@ -93,5 +119,5 @@ img {
 
 img:hover {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
