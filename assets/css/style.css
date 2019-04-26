@@ -1,4 +1,4 @@
-h4 {
+h2 {
     color: #009973;
     padding: 5%;
 }
@@ -54,6 +54,7 @@ h4 {
     border: 1px solid #00b386;
     border-radius: 5px;
     text-align: center;
+    margin: 10px;
 }
 
 body {
@@ -61,7 +62,7 @@ body {
 }
 
 .project-one, .project-gif, .project-guess, .project-trivia {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
 
