@@ -1,3 +1,8 @@
+body {
+    background-color:#181818;;
+}
+
+
 h2 {
     color: #009973;
     padding: 5%;
@@ -56,6 +61,8 @@ a:hover{
     border: 1px solid #00b386;
     border-radius: 5px;
     text-align: center;
+    margin: 0 auto;
+    width: 99% !important;
 }
 
 .email-box:hover {
@@ -98,10 +105,6 @@ a:hover{
 
 .title-text {
     text-align: center;
-}
-
-body {
-    background-color:#181818;;
 }
 
 .project-one, .project-gif, .project-guess, .project-trivia {
