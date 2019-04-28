@@ -42,3 +42,4 @@ newImgFour.alt = 'Fruits and Vegetable Trivia'
 newDivFour.appendChild(newImgFour)
 let triviaProj = document.getElementById('trivia-proj')
 triviaProj.appendChild(newDivFour)
+
