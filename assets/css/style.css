@@ -4,7 +4,7 @@ body {
 
 #header-box {
     border-bottom: 1px solid #00b386;
-    background-color: black;
+    background-color: #03060a;;
 }
 
 .nav-el-one {
@@ -26,11 +26,24 @@ body {
     display: block;
 }
 #name-block-one {
-    
+    opacity: 0;
+    animation: fadeInDownTest 1s ease-in-out 0s forwards;
     font-size: 3em;
 }
 #name-block-two  {
+    opacity: 0;
+    animation: fadeInDownTest 1s ease-in-out 0s forwards;
     font-size: 2em;
+}
+@keyframes fadeInDownTest {
+    0% {
+    opacity: 0;
+    transform: translateY(-40px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
 }
 
 h2 {
@@ -161,7 +174,7 @@ img:hover {
 
 #footer-box {
     border-top: 1px solid #00b386;
-    background-color: black;
+    background-color: #03060a;
     text-align: center;
     padding: 1.5em;
     margin-top: 2em;
