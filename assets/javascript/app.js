@@ -33,6 +33,14 @@ const imgArr = [
     {
         className: "project-two-two",
         source: "assets/images/guardians.png"
+    },
+    {
+        className: "project-three-three",
+        source: "assets/images/gotgiftastic.png"
+    },
+    {
+        className: "project-four-four",
+        source: "assets/images/triviajpeg.jpg"
     }
 ]
 
@@ -45,14 +53,15 @@ for (let j = 0; j < imgArr.length; j++) {
     let imgTestDiv = document.getElementById('test-img-div')
     imgTestDiv.appendChild(newImgDiv)
     //const element = imgArr[j];
-    
+
+    //may have to create anchor element, id, and link in obj as well
 }
 
 //adding image to div to a project box
 let newDivOne = document.createElement('div');
 newDivOne.classList.add('project-one')
 let newImgOne = document.createElement('img');
-newImgOne.id = 'projctOne'
+//newImgOne.id = 'projctOne'
 newImgOne.src = "assets/images/project-one.png"
 newImgOne.alt = 'The Rabbit Hole-Project One'
 newDivOne.appendChild(newImgOne)
@@ -63,7 +72,7 @@ projOne.appendChild(newDivOne)
 let newDivTwo = document.createElement('div');
 newDivTwo.classList.add('project-guess')
 let newImgTwo = document.createElement('img');
-newImgTwo.id = 'wordGuess'
+//newImgTwo.id = 'wordGuess'
 newImgTwo.src = "assets/images/guardians.png"
 newImgTwo.alt = 'Guardians of the Galaxy Word Guess Game'
 newDivTwo.appendChild(newImgTwo)
@@ -74,7 +83,7 @@ guessProj.appendChild(newDivTwo)
 let newDivThree = document.createElement('div');
 newDivThree.classList.add('project-gif')
 let newImgThree = document.createElement('img');
-newImgThree.id = 'giftastic'
+//newImgThree.id = 'giftastic'
 newImgThree.src = "assets/images/gotgiftastic.png"
 newImgThree.alt = 'Game of Thrones GifTastic'
 newDivThree.appendChild(newImgThree)
@@ -85,7 +94,7 @@ gifProj.appendChild(newDivThree)
 let newDivFour = document.createElement('div');
 newDivFour.classList.add('project-trivia')
 let newImgFour = document.createElement('img');
-newImgFour.id = 'giftastic'
+//newImgFour.id = 'giftastic'
 newImgFour.src = "assets/images/triviajpeg.jpg"
 newImgFour.alt = 'Fruits and Vegetable Trivia'
 newDivFour.appendChild(newImgFour)
