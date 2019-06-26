@@ -1,3 +1,52 @@
+//general object test loop
+const objArr = [
+    {
+        name: "test one",
+        attr: "test-1"
+    },
+    {
+        name: "test two",
+        attr: "test-2"
+    }
+]
+
+for (let i = 0; i < objArr.length; i++) {
+    const newTestDiv = document.createElement('div');
+    newTestDiv.classList.add("test-div");
+    let stringOne = document.createElement('p');
+    stringOne.setAttribute("id", objArr[i].attr)
+    stringOne.textContent = objArr[i].name
+    newTestDiv.appendChild(stringOne)
+
+    let divForTesting = document.getElementById("div-for-test")
+    divForTesting.appendChild(newTestDiv)
+    
+}
+
+
+//testing img object loop
+const imgArr = [
+    {
+        className: "project-one-one",
+        source: "assets/images/project-one.png"
+    },
+    {
+        className: "project-two-two",
+        source: "assets/images/guardians.png"
+    }
+]
+
+for (let j = 0; j < imgArr.length; j++) {
+    let newImgDiv = document.createElement('div')
+    newImgDiv.classList.add(imgArr[j].className)
+    let newImg = document.createElement('img')
+    newImg.src = imgArr[j].source
+    newImgDiv.appendChild(newImg)
+    let imgTestDiv = document.getElementById('test-img-div')
+    imgTestDiv.appendChild(newImgDiv)
+    //const element = imgArr[j];
+    
+}
 
 //adding image to div to a project box
 let newDivOne = document.createElement('div');
