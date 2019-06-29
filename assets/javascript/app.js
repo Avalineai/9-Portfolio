@@ -1,103 +1,74 @@
-//general object test loop
-const objArr = [
-    {
-        name: "test one",
-        attr: "test-1"
-    },
-    {
-        name: "test two",
-        attr: "test-2"
-    }
-]
-
-for (let i = 0; i < objArr.length; i++) {
-    const newTestDiv = document.createElement('div');
-    newTestDiv.classList.add("test-div");
-    let stringOne = document.createElement('p');
-    stringOne.setAttribute("id", objArr[i].attr)
-    stringOne.textContent = objArr[i].name
-    newTestDiv.appendChild(stringOne)
-
-    let divForTesting = document.getElementById("div-for-test")
-    divForTesting.appendChild(newTestDiv)
-    
-}
-
 
 //testing img object loop
 const imgArr = [
     {
-        className: "project-one-one",
-        source: "assets/images/project-one.png"
+        title: "Project Two-My Closet",
+        source: "assets/images/closet.png",
+        deployed: "https://project2uscd.herokuapp.com/",
+        github: "https://github.com/Avalineai/project_2"
+
     },
     {
-        className: "project-two-two",
-        source: "assets/images/guardians.png"
+        title: "Project One-The Rabbit Hole",
+        source: "assets/images/project-one.png",
+        deployed: "https://avalineai.github.io/8-Project-1/",
+        github: "https://github.com/Avalineai/8-Project-1"
     },
     {
-        className: "project-three-three",
-        source: "assets/images/gotgiftastic.png"
+        title: "Guardians of the Galaxy Word Guess Game",
+        source: "assets/images/guardians.png",
+        deployed: "https://avalineai.github.io/WordGuessGame/",
+        github: "https://github.com/Avalineai/WordGuessGame"
     },
     {
-        className: "project-four-four",
-        source: "assets/images/triviajpeg.jpg"
+        title: "Game of Thrones GifTastic",
+        source: "assets/images/gotgiftastic.png",
+        deployed: "https://avalineai.github.io/GifTastic/",
+        github: "https://github.com/Avalineai/GifTastic"
+    },
+    {
+        title: "Fruits and Vegetables Trivia",
+        source: "assets/images/triviajpeg.jpg",
+        deployed: "https://avalineai.github.io/TriviaGame/",
+        github: "https://github.com/Avalineai/TriviaGame"
     }
 ]
 
 for (let j = 0; j < imgArr.length; j++) {
+
     let newImgDiv = document.createElement('div')
-    newImgDiv.classList.add(imgArr[j].className)
+    newImgDiv.classList.add('card')
+
     let newImg = document.createElement('img')
+    newImg.classList.add("card-img-top")
     newImg.src = imgArr[j].source
     newImgDiv.appendChild(newImg)
+
+    let cardBodyDiv = document.createElement('div')
+    cardBodyDiv.classList.add('card-body')
+
+    let cardText = document.createElement('h5')
+    cardText.classList.add("card-title")
+    cardBodyDiv.appendChild(cardText)
+    cardText.textContent = imgArr[j].title
+
+    let cardLink = document.createElement('a')
+    cardLink.classList.add("deploy-link")
+    cardLink.href = imgArr[j].deployed
+    cardLink.textContent = "Deployed Project"
+    cardBodyDiv.appendChild(cardLink)
+
+    let newp = document.createElement('p')
+    cardBodyDiv.appendChild(newp)
+
+    let cardGithub = document.createElement('a')
+    cardGithub.classList.add("card-github")
+    cardGithub.href = imgArr[j].github
+    cardGithub.textContent = "Github Repo"
+    newp.appendChild(cardGithub)
+
+    newImgDiv.appendChild(cardBodyDiv)
+
     let imgTestDiv = document.getElementById('test-img-div')
     imgTestDiv.appendChild(newImgDiv)
-    //const element = imgArr[j];
-
-    //may have to create anchor element, id, and link in obj as well
 }
-
-//adding image to div to a project box
-let newDivOne = document.createElement('div');
-newDivOne.classList.add('project-one')
-let newImgOne = document.createElement('img');
-//newImgOne.id = 'projctOne'
-newImgOne.src = "assets/images/project-one.png"
-newImgOne.alt = 'The Rabbit Hole-Project One'
-newDivOne.appendChild(newImgOne)
-let projOne = document.getElementById('one-proj')
-projOne.appendChild(newDivOne)
-
-//adding image to div to a project box
-let newDivTwo = document.createElement('div');
-newDivTwo.classList.add('project-guess')
-let newImgTwo = document.createElement('img');
-//newImgTwo.id = 'wordGuess'
-newImgTwo.src = "assets/images/guardians.png"
-newImgTwo.alt = 'Guardians of the Galaxy Word Guess Game'
-newDivTwo.appendChild(newImgTwo)
-let guessProj = document.getElementById('guess-proj')
-guessProj.appendChild(newDivTwo)
-
-//adding image to div to a project box
-let newDivThree = document.createElement('div');
-newDivThree.classList.add('project-gif')
-let newImgThree = document.createElement('img');
-//newImgThree.id = 'giftastic'
-newImgThree.src = "assets/images/gotgiftastic.png"
-newImgThree.alt = 'Game of Thrones GifTastic'
-newDivThree.appendChild(newImgThree)
-let gifProj = document.getElementById('gif-proj')
-gifProj.appendChild(newDivThree)
-
-//adding image to div to a project box
-let newDivFour = document.createElement('div');
-newDivFour.classList.add('project-trivia')
-let newImgFour = document.createElement('img');
-//newImgFour.id = 'giftastic'
-newImgFour.src = "assets/images/triviajpeg.jpg"
-newImgFour.alt = 'Fruits and Vegetable Trivia'
-newDivFour.appendChild(newImgFour)
-let triviaProj = document.getElementById('trivia-proj')
-triviaProj.appendChild(newDivFour)
-

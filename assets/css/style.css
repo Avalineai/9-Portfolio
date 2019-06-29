@@ -1,4 +1,4 @@
-body {
+body, .card {
     background-color:#181818;;
 }
 
@@ -13,7 +13,7 @@ body {
     padding-left: 20px;
     padding-top: 10px;
 }
-.nav-el-two {
+.nav-el-two, h5, .card-github, .deploy-link {
     color: #00b386;
     padding: 1em;
 }
@@ -23,7 +23,6 @@ body {
     display: block;
     padding: 20%;
     color: #00b386;
-    display: block;
 }
 #name-block-one {
     opacity: 0;
@@ -163,21 +162,22 @@ a:hover {
 img {
     width: 100%;
     border-radius: 5px;
-    opacity: 0.65;
+    /*opacity: 0.65;*/
 }
 
-img:hover {
+/* img:hover {
     opacity: 1;
     transform: scale(1.3);
     transition: 0.5s ease-in-out;
-}
+} */
 
 #footer-box {
-    border-top: 1px solid #00b386;
-    background-color: #03060a;
+    /* border-top: 1px solid #00b386; */
+    background-color:#181818;
     text-align: center;
     padding: 1.5em;
     margin-top: 2em;
+    width: 100%;
 }
 
 #footer-text {
